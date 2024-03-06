@@ -6,11 +6,9 @@
 
 int main()
 {
-	{
-		VulkanInstance ins{ true };
+	VulkanInstance ins{ true };
 
-		VulkanDevice bb(ins.getPhysicalDevice());
-	}
+	VulkanDevice bb(ins.getPhysicalDevice());
 
 	return 0;
 }

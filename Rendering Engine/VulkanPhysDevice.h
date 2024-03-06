@@ -8,6 +8,7 @@ class VulkanPhysDevice
 {
 public:
 	VulkanPhysDevice(VkPhysicalDevice physicalDevice);
+
 	const VkPhysicalDeviceFeatures& getFeatures() const;
 	const std::vector<VkQueueFamilyProperties>& getQueueFamilies() const;
 	operator VkPhysicalDevice() const;

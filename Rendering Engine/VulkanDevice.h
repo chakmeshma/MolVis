@@ -10,12 +10,12 @@ public:
 	VulkanDevice(VulkanPhysDevice& physicalDevice);
 	~VulkanDevice();
 
+	uint32_t getGraphicsQueueFamilyIndex();
+	uint32_t getTransferQueueFamilyIndex();
 private:
 	VkDevice device{ VK_NULL_HANDLE };
 	const VulkanPhysDevice& parentPhysicalDevice;
 	VkDeviceCreateInfo createInfo{};
-	uint32_t getGraphicsQueueFamilyIndex();
-	uint32_t getTransferQueueFamilyIndex();
 	int graphicsQueueIndex{ -1 };
 	int transferQueueIndex{ -1 };
 

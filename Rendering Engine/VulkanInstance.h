@@ -10,6 +10,7 @@ class VulkanInstance
 public:
 	VulkanInstance(bool validation);
 	~VulkanInstance();
+
 	VulkanPhysDevice& getPhysicalDevice();
 private:
 	void selectPhysicalDevice();
